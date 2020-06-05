@@ -9,6 +9,8 @@ class Game
   end
 
   def play
+    @board.display
+    
     turn while !over?
     puts won? ? "Congratulations #{winner}!" : "Cat's Game!"
   end
@@ -20,8 +22,11 @@ class Game
         index = @board.position_as_index(position)
         @board.cells[index] = current_player.token
       else
+        puts "Oops, that position is taken. Try again."
         turn
       end
+
+      @board.display
   end
 
   def current_player

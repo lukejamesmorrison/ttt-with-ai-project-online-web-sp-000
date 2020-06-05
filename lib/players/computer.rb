@@ -6,7 +6,6 @@ module Players
       board.cells.each_with_index do |cell, index|
         empty_positions << index + 1 if cell == " "
       end
-
       empty_positions.sample.to_s
     end
 
