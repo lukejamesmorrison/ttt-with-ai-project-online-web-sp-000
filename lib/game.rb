@@ -24,7 +24,8 @@ class Game
        if players[0].token == "O"
          players.reverse!
        end
-       game = self.new(player_1, player_2)
+
+       game = self.new(players[0], players[1])
      when "2"
        game = self.new
     when "3"
