@@ -96,6 +96,7 @@ class Game
   end
 
   def play
+    
     @board.display
 
     turn while !over?
