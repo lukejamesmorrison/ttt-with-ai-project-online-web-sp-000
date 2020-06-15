@@ -13,18 +13,18 @@ class Game
   def self.get_starting_players
     player_count = self.get_player_count
     start_player = self.get_start_player
-    symbols = start_player == 1 ? ['X', 'O'] : ['O', 'X']
+    tokens = start_player == 1 ? ['X', 'O'] : ['O', 'X']
 
     case player_count
     when "1" # Human v AI
-       player_1 = Players::Human.new(symbols[0])
-       player_2 = Players::Computer.new(symbols[1])
+       player_1 = Players::Human.new(tokens[0])
+       player_2 = Players::Computer.new(tokens[1])
      when "2" # Human v Human
-       player_1 = Players::Human.new(symbols[0])
-       player_2 = Players::Human.new(symbols[1])
+       player_1 = Players::Human.new(tokens[0])
+       player_2 = Players::Human.new(tokens[1])
     when "3" # AI vs AI
-      player_1 = Players::Computer.new(symbols[0])
-      player_2 = Players::Computer.new(symbols[1])
+      player_1 = Players::Computer.new(tokens[0])
+      player_2 = Players::Computer.new(tokens[1])
     end
 
     players = [player_1, player_2]
