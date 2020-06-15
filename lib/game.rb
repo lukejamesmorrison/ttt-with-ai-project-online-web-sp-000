@@ -86,7 +86,6 @@ class Game
   def play
     @board.display
 
-
     turn until over?
 
     puts '=================='
