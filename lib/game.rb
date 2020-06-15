@@ -92,11 +92,11 @@ class Game
     puts '=================='
 
     # Play again?
-    # puts "Play again? [y/n]"
-    # input = gets.strip
-    # if ['y'].include?(input.downcase)
-    #   Game.start
-    # end
+    puts "Play again? [y/n]"
+    input = gets.strip
+    if ['y'].include?(input.downcase)
+      Game.start
+    end
   end
 
   def turn
