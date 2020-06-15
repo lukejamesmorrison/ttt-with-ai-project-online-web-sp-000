@@ -25,7 +25,7 @@ class Game
          players.reverse!
        end
 
-       game = self.new(players[0], players[1])
+      #  game = self.new(players[0], players[1])
      when "2"
        game = self.new
     when "3"
