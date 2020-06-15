@@ -108,6 +108,7 @@ class Game
 
     if @board.valid_move?(position)
       index = @board.position_as_index(position)
+      update(index, current_player)
       @board.cells[index] = current_player.token
     else
       puts 'Oops, that position is taken. Try again.'
@@ -118,7 +119,8 @@ class Game
     puts "" # a line-space to visually separate board states
   end
 
-  def update(position, player)
+  def update(index, player)
+    @board.cells[index] = current_player.token
   end
 
   def current_player
