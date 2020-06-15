@@ -67,15 +67,15 @@ class Game
     self.get_start_player
   end
 
-  def play_again
-    puts "Play again? [y/n]"
-    input = gets.strip
-
-    if ['y'].include?(input.downcase)
-      puts "" # a line-space to visually separate board states
-      return true
-    end
-  end
+  # def play_again
+  #   puts "Play again? [y/n]"
+  #   input = gets.strip
+  # 
+  #   if ['y'].include?(input.downcase)
+  #     puts "" # a line-space to visually separate board states
+  #     return true
+  #   end
+  # end
 
   def initialize(player_1 = Players::Human.new('X'), player_2 = Players::Human.new('O'), board = Board.new)
     @player_1 = player_1
