@@ -91,7 +91,7 @@ class Game
     puts won? ? "Congratulations #{winner}!" : "Cat's Game!"
     puts '=================='
 
-    if Game.play_again == true
+    if play_again == true
       Game.start
     end
   end
