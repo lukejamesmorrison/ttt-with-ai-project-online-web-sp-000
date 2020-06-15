@@ -87,9 +87,7 @@ class Game
     @board.display
 
 
-    until over? do
-      turn
-    end
+    turn until over?
 
     puts '=================='
     puts won? ? "Congratulations #{winner}!" : "Cat's Game!"
