@@ -81,7 +81,7 @@ class Game
 
   def self.play_again
     puts "Play again? [y/n]"
-    input = STDIN.gets.strip
+    input = gets.strip
 
     if ['y'].include?(input.downcase)
       puts "" # a line-space to visually separate board states
