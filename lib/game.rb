@@ -44,6 +44,12 @@ class Game
         players.reverse!
       end
     end
+    
+    players = [player_1, player_2]
+
+    if players[0].token == "O"
+      players.reverse!
+    end
 
     players
   end
