@@ -13,7 +13,7 @@ class Game
   def self.get_starting_players
     player_count = self.get_player_count
     start_player = self.get_start_player
-    symbols= start_player == 1 ? ['X', 'O'] : ['O', 'X']
+    symbols = start_player == 1 ? ['X', 'O'] : ['O', 'X']
 
     case player_count
      when "1"
