@@ -70,7 +70,7 @@ class Game
   # def play_again
   #   puts "Play again? [y/n]"
   #   input = gets.strip
-  # 
+  #
   #   if ['y'].include?(input.downcase)
   #     puts "" # a line-space to visually separate board states
   #     return true
