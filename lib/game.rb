@@ -38,7 +38,7 @@ class Game
 
     input = gets.strip
 
-    while !["1", "2", "3"].include?(input) do
+    unitl ["1", "2", "3"].include?(input) do
       puts "Invalid input. Please try again."
       self.print_player_options
       input = gets.strip
