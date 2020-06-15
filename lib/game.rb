@@ -67,7 +67,7 @@ class Game
     self.get_start_player
   end
 
-  def self.play_again
+  def play_again
     puts "Play again? [y/n]"
     input = gets.strip
 
