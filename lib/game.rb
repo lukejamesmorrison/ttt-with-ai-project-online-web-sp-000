@@ -17,8 +17,8 @@ class Game
 
     case player_count
      when "1"
-       player_1 = Players::Human.new("X")
-       player_2 = start_player == 1 ? Players::Computer.new("O") : Players::Human.new("O")
+       player_1 = Players::Human.new(symbols[0])
+       player_2 = Players::Computer.new(symbols[1])
        game = self.new(player_1, player_2)
      when "2"
        game = self.new
