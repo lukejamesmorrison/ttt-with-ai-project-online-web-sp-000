@@ -91,7 +91,7 @@ class Game
     puts won? ? "Congratulations #{winner}!" : "Cat's Game!"
     puts '=================='
 
-    Play again?
+    # Play again?
     puts "Play again? [y/n]"
     input = gets.strip
     if ['y'].include?(input.downcase)
