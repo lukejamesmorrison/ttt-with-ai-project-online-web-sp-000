@@ -342,7 +342,7 @@ describe 'Game' do
 
       expect($stdout).to receive(:puts).with("Congratulations X!")
 
-      expect(game.current_player).to receive(:gets).and_return('n')
+      # expect(game.current_player).to receive(:gets).and_return('n')
 
       game.play
     end
