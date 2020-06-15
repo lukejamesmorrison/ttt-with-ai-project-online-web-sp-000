@@ -331,7 +331,7 @@ describe 'Game' do
     it 'plays through an entire game' do
       game = Game.new
       allow($stdout).to receive(:puts)
-      allow($stdin).to receive(:gets).and_return('foo')
+      allow($stdin).to receive(:gets).and_return('n')
 
       expect(game.player_1).to receive(:gets).and_return("1")
       expect(game.player_2).to receive(:gets).and_return("2")
