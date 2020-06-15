@@ -93,7 +93,7 @@ class Game
 
     # Play again?
     puts "Play again? [y/n]"
-    input = gets.strip
+    input = $stdin.gets.strip
     if ['y'].include?(input.downcase)
       Game.start
     end
