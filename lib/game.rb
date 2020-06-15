@@ -19,32 +19,14 @@ class Game
      when "1"
        player_1 = Players::Human.new(symbols[0])
        player_2 = Players::Computer.new(symbols[1])
-       players = [player_1, player_2]
-
-       if players[0].token == "O"
-         players.reverse!
-       end
-
-      #  game = self.new(players[0], players[1])
      when "2"
-
        player_1 = Players::Human.new(symbols[0])
        player_2 = Players::Human.new(symbols[1])
-       players = [player_1, player_2]
-
-       if players[0].token == "O"
-         players.reverse!
-       end
     when "3"
       player_1 = Players::Computer.new(symbols[0])
       player_2 = Players::Computer.new(symbols[1])
-      players = [player_1, player_2]
-
-      if players[0].token == "O"
-        players.reverse!
-      end
     end
-    
+
     players = [player_1, player_2]
 
     if players[0].token == "O"
