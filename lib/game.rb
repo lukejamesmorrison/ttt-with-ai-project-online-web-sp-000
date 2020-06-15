@@ -17,7 +17,7 @@ class Game
 
     case player_count
      when "1"
-       player_1 = start_player == 1 ? Players::Human.new("X") : Players::Computer.new("X")
+       player_1 = Players::Human.new("X")
        player_2 = start_player == 1 ? Players::Computer.new("O") : Players::Human.new("O")
        game = self.new(player_1, player_2)
      when "2"
@@ -51,7 +51,7 @@ class Game
   end
 
   def self.get_start_player
-    puts "Which player will go first -  1 or 2?"
+    puts "Which player will go first (with 'X') -  1 or 2?"
     input = gets.strip
 
     return input if [1,2].include?(input.to_i)
