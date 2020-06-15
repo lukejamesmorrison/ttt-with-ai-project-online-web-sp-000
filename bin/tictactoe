@@ -2,8 +2,10 @@
 
 require_relative '../config/environment'
 
+# Start initial game
 Game.start
 
+# Ask user if they would like to continue playing
 while Game.play_again do
   Game.start
 end
