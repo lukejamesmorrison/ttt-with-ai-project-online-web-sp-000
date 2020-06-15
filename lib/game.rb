@@ -7,7 +7,6 @@ class Game
   def self.start
     players = self.get_starting_players # [player, player]
     game = self.new(players[0], players[1])
-
     game.play
   end
 
