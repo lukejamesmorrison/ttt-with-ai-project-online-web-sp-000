@@ -120,7 +120,7 @@ class Game
   end
 
   def update(index, player)
-    @board.cells[index] = current_player.token
+    @board.cells[index] = player.token
   end
 
   def current_player
