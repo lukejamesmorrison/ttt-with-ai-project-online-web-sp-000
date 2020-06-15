@@ -4,6 +4,12 @@ class Game
 
   def self.start
 
+
+
+    game.play
+  end
+
+  def self.get_starting_players(first_player_num)
     player_count = self.get_player_count
     start_player = self.get_start_player
     other_player = start_player == 1 ? 2 : 1
@@ -20,11 +26,6 @@ class Game
       player_2 = Players::Computer.new('O')
       game = self.new(player_1, player_2)
     end
-
-    game.play
-  end
-
-  def self.get_starting_players(first_player_num)
   end
 
   def self.get_player_count
