@@ -92,6 +92,8 @@ class Game
     puts '=================='
 
     # Play again?
+
+    binding.pry
     puts "Play again? [y/n]"
     input = gets.strip
     if ['y'].include?(input.downcase)
