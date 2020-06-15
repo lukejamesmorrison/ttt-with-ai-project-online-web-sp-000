@@ -5,7 +5,7 @@ class Game
   @@count = 0
 
   def self.start
-
+    @@count += 1
     players = self.get_starting_players # [player, player]
     game = self.new(players[0], players[1])
 
