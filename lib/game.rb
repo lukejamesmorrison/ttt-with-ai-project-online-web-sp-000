@@ -32,7 +32,7 @@ class Game
     if players[0].token == "O"
       players.reverse!
     end
-
+    puts players
     players
   end
 
