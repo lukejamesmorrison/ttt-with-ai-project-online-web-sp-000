@@ -3,3 +3,7 @@
 require_relative '../config/environment'
 
 Game.start
+
+def play_again
+  puts "Play again"
+end
