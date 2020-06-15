@@ -22,7 +22,7 @@ class Game
        players = [player_1, player_2]
 
        if players[0].token == "O"
-         players.reverse
+         players.reverse!
        end
        game = self.new(player_1, player_2)
      when "2"
