@@ -96,7 +96,7 @@ class Game
   end
 
   def play
-    binding.pry
+    # binding.pry
     @board.display
 
     turn while !over?
