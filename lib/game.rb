@@ -118,6 +118,9 @@ class Game
     puts "" # a line-space to visually separate board states
   end
 
+  def update(position, player)
+  end
+
   def current_player
     t_count = @board.turn_count
     t_count == 0 || t_count % 2 == 0 ? @player_1 : @player_2
