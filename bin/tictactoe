@@ -2,4 +2,8 @@
 
 require_relative '../config/environment'
 
-Game.start
+if Game.count == 0 do
+  Game.start
+else
+  Game.restart
+end
