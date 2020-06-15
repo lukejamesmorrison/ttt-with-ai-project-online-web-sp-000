@@ -340,10 +340,12 @@ describe 'Game' do
       expect(game.player_2).to receive(:gets).and_return("6")
       expect(game.player_1).to receive(:gets).and_return("7")
 
-      allow($stdin).to receive(:gets).and_return('n')
+
 
       expect($stdout).to receive(:puts).with("Congratulations X!")
-      # expect($stdin).to receive(:gets).with("n")
+      
+      allow($stdin).to receive(:gets).and_return('n')
+
 
       game.play
     end
