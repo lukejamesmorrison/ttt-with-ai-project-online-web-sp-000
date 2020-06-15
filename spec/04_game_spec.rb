@@ -342,7 +342,7 @@ describe 'Game' do
 
       expect($stdout).to receive(:puts).with("Congratulations X!")
 
-      expect($stdin).to receive(:gets)
+      # expect($stdin).to receive(:gets)
 
       game.play
     end
