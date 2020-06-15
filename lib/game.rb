@@ -24,7 +24,7 @@ class Game
     game.play
   end
 
-  def self.get_starting_players()
+  def self.get_starting_players(first_player)
   end
 
   def self.get_player_count
