@@ -29,9 +29,8 @@ class Game
 
     players = [player_1, player_2]
 
-    if players[0].token == "O"
-      players.reverse!
-    end
+    players.reverse! if players[0].token == "O"
+
 
     players
   end
