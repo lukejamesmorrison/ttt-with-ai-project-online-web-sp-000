@@ -341,13 +341,7 @@ describe 'Game' do
       expect(game.player_1).to receive(:gets).and_return("7")
 
       expect($stdout).to receive(:puts).with("Congratulations X!")
-
-      # binding.pry
-      #
-      # allow(game.player_1).to receive(:gets).and_return("n")
-      # # allow($stdin).to receive(:gets).and_return('n')
-
-
+      
       game.play
     end
   end
