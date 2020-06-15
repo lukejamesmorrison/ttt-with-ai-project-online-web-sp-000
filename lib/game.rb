@@ -2,6 +2,8 @@ class Game
 
   attr_accessor :player_1, :player_2, :board
 
+  @@count = 0
+
   def self.start
 
     players = self.get_starting_players # [player, player]
