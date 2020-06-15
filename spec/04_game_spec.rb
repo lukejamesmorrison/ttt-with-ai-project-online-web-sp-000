@@ -342,6 +342,8 @@ describe 'Game' do
 
       expect($stdout).to receive(:puts).with("Congratulations X!")
 
+      game.player_1
+
       game.play
     end
   end
