@@ -9,7 +9,12 @@ while play_again do
 end
 
 def play_again
-  puts "Play again"
+    input = gets.strip
+
+    if ['y'].include?(input.downcase)
+      puts "" # a line-space to visually separate board states
+      return true
+    end
 end
 
 play_again
