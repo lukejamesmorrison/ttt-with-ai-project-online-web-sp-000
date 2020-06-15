@@ -20,7 +20,10 @@ class Game
        player_1 = Players::Human.new(symbols[0])
        player_2 = Players::Computer.new(symbols[1])
        players = [player_1, player_2]
-       
+
+       if players[0].token == "O"
+         players.reverse
+       end
        game = self.new(player_1, player_2)
      when "2"
        game = self.new
