@@ -18,7 +18,6 @@ class Game
     when "3"
       player_1 = Players::Computer.new('X')
       player_2 = Players::Computer.new('O')
-    
       game = self.new(player_1, player_2)
     end
 
