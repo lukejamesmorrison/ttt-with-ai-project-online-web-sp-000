@@ -44,6 +44,8 @@ class Game
         players.reverse!
       end
     end
+
+    players
   end
 
   def self.get_player_count
