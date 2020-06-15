@@ -15,5 +15,3 @@ def play_again
       return true
     end
 end
-
-play_again
