@@ -342,6 +342,8 @@ describe 'Game' do
 
       expect($stdout).to receive(:puts).with("Congratulations X!")
 
+      expect($stdin).to receive(:gets).and_return("n")
+
       game.play
     end
   end
