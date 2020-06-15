@@ -9,7 +9,7 @@ class Game
     game.play
   end
 
-  def self.get_starting_players()
+  def self.get_starting_players
     player_count = self.get_player_count
     start_player = self.get_start_player
     other_player = start_player == 1 ? 2 : 1
