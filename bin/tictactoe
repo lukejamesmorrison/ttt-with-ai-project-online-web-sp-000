@@ -3,31 +3,3 @@
 require_relative '../config/environment'
 
 Game.start
-# puts "Welome to Tic Tac Toe! How many human players would you like to use?"
-# puts "[1] 1 Player"
-# puts "[2] 2 Players"
-# puts "[3] 0 Players (The computer will play itself)"
-#
-# input = gets.strip
-#
-# while !["1", "2", "3"].include?(input) do
-#   puts "Invalid input. Please try again."
-#   puts "[1] 1 Player"
-#   puts "[2] 2 Players"
-#   puts "[3] 0 Players (The computer will play itself)"
-# end
-#
-# case input
-#  when "1"
-#    player_1 = Players::Human.new('X')
-#    player_2 = Players::Computer.new('O')
-#    game = Game.new(player_1, player_2)
-#  when "2"
-#    game = Game.new
-# when "3"
-#   player_1 = Players::Computer.new('X')
-#   player_2 = Players::Computer.new('O')
-#   game = Game.new(player_1, player_2)
-# end
-#
-# game.play
