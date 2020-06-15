@@ -4,7 +4,7 @@ require_relative '../config/environment'
 
 Game.start
 
-while play_again do
+while Game.play_again do
   Game.start
 end
 
