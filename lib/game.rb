@@ -105,7 +105,6 @@ class Game
 
     if Game.play_again == true
       Game.start
-      binding.pry
     end
   end
 
