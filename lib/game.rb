@@ -98,7 +98,7 @@ class Game
     # Play again?
 
     puts "Play again? [y/n]"
-    inding.pry
+    binding.pry
     input = gets.strip
     if ['y'].include?(input.downcase)
       Game.start
