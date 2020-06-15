@@ -87,15 +87,6 @@ class Game
     puts '=================='
     puts won? ? "Congratulations #{winner}!" : "Cat's Game!"
     puts '=================='
-
-    # Play again?
-
-    # puts "Play again? [y/n]"
-    # binding.pry
-    # input = gets.strip
-    # if ['y'].include?(input.downcase)
-    #   Game.start
-    # end
   end
 
   def turn
