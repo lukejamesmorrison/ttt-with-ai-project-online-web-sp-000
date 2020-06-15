@@ -82,7 +82,6 @@ class Game
   def play
     @board.display
     turn until over?
-
     puts '=================='
     puts won? ? "Congratulations #{winner}!" : "Cat's Game!"
     puts '=================='
