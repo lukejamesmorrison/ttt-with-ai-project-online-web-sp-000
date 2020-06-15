@@ -36,7 +36,7 @@ class Game
          players.reverse!
        end
     when "3"
-      player_1 = Players::Human.new(symbols[0])
+      player_1 = Players::Computyer.new(symbols[0])
       player_2 = Players::Computer.new(symbols[1])
       players = [player_1, player_2]
 
