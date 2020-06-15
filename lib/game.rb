@@ -36,9 +36,13 @@ class Game
          players.reverse!
        end
     when "3"
-      player_1 = Players::Computer.new('X')
-      player_2 = Players::Computer.new('O')
-      game = self.new(player_1, player_2)
+      player_1 = Players::Human.new(symbols[0])
+      player_2 = Players::Computer.new(symbols[1])
+      players = [player_1, player_2]
+
+      if players[0].token == "O"
+        players.reverse!
+      end
     end
   end
 
