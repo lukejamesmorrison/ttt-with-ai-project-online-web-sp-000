@@ -30,9 +30,6 @@ class Game
     players = [player_1, player_2]
 
     players.reverse! if players[0].token == "O"
-
-
-    players
   end
 
   def self.get_player_count
