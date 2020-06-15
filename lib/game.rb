@@ -87,7 +87,7 @@ class Game
     @board.display
 
 
-    while !over? do
+    until over? do
       turn
     end
 
